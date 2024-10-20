@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary Youth Labs - Homepage</title>
+    <title>Visionary Youth Labs</title>
+    <link rel="icon" href="images/visionary youth labs logo.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </head>
 <body>
    <!-- Navbar -->
@@ -57,6 +59,7 @@
         </div>
     </div>
  </div>
+
  <!-- Main Contents -->
  <div class="who-what-container">
     <div class="who-we-are">
@@ -110,15 +113,78 @@
  <!-- Home page contact gateway -->
   <div class="form-container">
     <div class="form-desc">
-        <h1>Want To Explore?</h1>
+        <div class="client-gateway">
+            <h1>Get In Touch</h1>
+            <div class="client-gateway-container">
+                <h1>I'm a Client...</h1>
+                <a href="">Click Here</a>
+            </div>
+        </div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint consequuntur soluta cum nesciunt ducimus ratione ipsam voluptas dignissimos harum non molestias ex fugit explicabo, itaque odit deserunt corrupti! Consequatur voluptate vitae minus corrupti, ducimus ex numquam quo dicta. A, eaque.</p>
+        <div class="form-social-media">
+            <a href=""><li class="fa-brands fa-linkedin"></li></a>
+            <a href=""><li class="fa-brands fa-facebook"></li></a>
+            <a href=""><li class="fa-brands fa-instagram"></li></a>
+        </div>
     </div>
     <div class="form">
         <form action="">
-
+            <div class="grids-container">
+                <div class="grid1">
+                    <input type="text" name="fName" placeholder="First name *" required>
+                    <input type="text" name="lName" placeholder="Last name">
+                </div>
+                <div class="grid1">
+                    <input type="email" name="email" placeholder="Email *" required>
+                    <input type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="grid">
+                    <input type="text" name="subject" class="subj" placeholder="Subject *" required>
+                </div>
+                <div class="grid">
+                    <textarea name="message" id="msg" rows="5" cols="10" placeholder="Write your message here"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button class="form-btn" type="reset">Reset</button>
+                     <button class="form-btn" type="submit">Submit</button>
+                </div>
+            </div>
         </form>
     </div>
   </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-container">
+        <div class="foo-contact-info">
+            <h1>Visionary Youth Labs</h1>
+            <address>
+                Cox's Bazar, Bangladesh <br>
+                visionaryyouthlabs@gmail.com <br>
+                +8801812050131
+            </address>
+        </div>
+        <div class="foo-service-info">
+            <h1>Services</h1>
+            <ul class="service-info-links">
+                <li><a href="">Recruitment Lead Generation</a></li>
+                <li><a href="">B2B Lead Generation</a></li>
+                <li><a href="">Advertisement</a></li>
+                <li><a href="">Video Editing</a></li>
+                <li><a href="">SEO</a></li>
+            </ul>
+        </div>
+        <div class="foo-subscribe">
+            <h1>Subscribe</h1>
+            <form action="">
+                <input type="email" placeholder="email"><br>
+                <button class="subs-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div> <hr>
+    <p class="copyrights">&copy;Visionary Youth Labs - 2024</p>
+  </div>
+
     <script src="script.js"></script>
 </body>
 </html>
