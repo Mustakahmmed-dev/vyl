@@ -8,6 +8,7 @@
 
 body {
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 /* Sticky Navbar */
@@ -178,10 +179,11 @@ body {
     height: 100%;
 
 }
-.hero-bio-photo img{
+.hero-bio-photo video{
     width: 100%;
     height: 100%;
-    border-top-left-radius: 80%;
+    border-top-left-radius: 100%;
+    
 }
 .hero-buttons{
     text-align: center;
@@ -195,6 +197,7 @@ body {
     margin: 10px;
     display: inline-block;
     transition: all 0.3s;
+    border-radius: 30px;
 }
 .btn-hero-contact{
     background-color: transparent;
@@ -221,3 +224,95 @@ body {
     }
     
 }
+
+/* Main Sections */
+
+/* Who What Container */
+.who-what-container{
+    min-height: 60vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-around;
+   gap: 40px;
+}
+.who-what-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Who What Responsiveness */
+@media screen and (max-width: 768px) {
+    .who-what-container{
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    
+}
+
+/* Service Section */
+.service-title{
+    text-align: center;
+    margin: 60px 0 0 0;
+    font-size: 50px;
+    
+}
+.service-container{
+    padding: 100px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+.service-line{
+    width: 50%;
+    margin: 0 auto;
+}
+.service{
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+.service:hover{
+    box-shadow: 4px 4px 8px gray;
+    background-color: black;
+    color: lightgray;
+    transform: scale(1.1);
+}
+.service h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+}
+.service p{
+    margin-bottom: 30px;
+}
+.service-btn-container{
+    text-align: right;
+}
+.service a{
+    padding: 10px 20px;
+}
+.service a:hover{
+    background-color: transparent;
+}
+.badge{
+    background: rgba(0, 0, 255, 0.466);
+    font-size: 14px;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 10px;
+}
+/* Service Section Responsiveness */
+@media screen and (max-width: 768px) {
+    .service-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* form-container */
